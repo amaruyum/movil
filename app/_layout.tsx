@@ -19,12 +19,13 @@ export default function RootLayout() {
   const [bdLista, setBdLista] = useState(false);
 
   useEffect(() => {
-    inicializarBaseDatos()
-      .then(() => setBdLista(true))
-      .catch((err) => {
-        console.error('[RootLayout] Error al inicializar BD:', err);
-        setBdLista(true);
-      });
+    try {
+      inicializarBaseDatos();
+      setBdLista(true);
+    } catch (err) {
+      console.error('[RootLayout] Error al inicializar BD:', err);
+      setBdLista(true);
+    }
   }, []);
 
   if (!bdLista) {
