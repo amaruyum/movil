@@ -1,30 +1,51 @@
 {
   "expo": {
-    "name": "listCine-app",
-    "slug": "listCine-app",
+    "name": "listCine",
+    "slug": "listcine",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0D0D0D"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.listcine.app"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0D0D0D"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.listcine.app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+  "expo-router",
+  "./plugins/withAndroidGradle",
+  [
+    "expo-build-properties",
+    {
+      "android": {
+        "kotlinVersion": "2.0.21"
+      }
+    }
+  ]
+],
+    "scheme": "listcine",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "23964cf4-8747-4d56-85bc-486079010abe"
+      }
     }
   }
 }
