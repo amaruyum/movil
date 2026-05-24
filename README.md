@@ -1,8 +1,7 @@
-# 🎬 listCine — App de Gestión de Películas
+# 🎬 listCine — App de Gestión de Películas -Objetivo
 
-Aplicación móvil multiplataforma desarrollada con **React Native + Expo** para gestionar una colección personal de películas. Desarrollada como actividad académica del módulo de **Desarrollo de Aplicaciones Multiplataforma**.
+El objetivo de **listCine** es  aplicación móvil multiplataforma desarrollada con **React Native + Expo** para gestionar una colección personal de películas. Desarrollada como actividad académica del módulo de **Desarrollo de Aplicaciones Multiplataforma**.
 
----
 
 ## 📱 Capturas de pantalla
 
